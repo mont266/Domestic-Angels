@@ -1,25 +1,16 @@
 <?php
+
+if (isset($_POST['submit'])) {
     $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
+    $subject = $_POST['subject'];
+    $mailFrom = $_POST['message'];
 
-    $email_from = 'ContactUs@DomesticAngels.net';
+    $mailTo = "worldsend123@live.co.uk";
+    $headers = "From: ".$mailFrom;
+    $txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
-    $email_subject = 'New Message From DomesticAngels.net';
-
-    $email_body = "Client Name: $name. \n".
-                    "Client Email: $visitor_email.\n".
-                        "Client Message: $message.\n";
-    
-                        
-$to = "worldsend123@live.co.uk";
-
-$headers = "From: $email_from \r\n";
-
-$headers .= "Reply-To: $visitor_email \r\n";
-
-mail($to,$email_subject,$email_body,$headers);
-
-header("Location: contactus.html");
+    mail($mailTo, $subject, $txt, $headers);
+    header("Location: contactus.html?mailsend");
+}
 
 ?>
