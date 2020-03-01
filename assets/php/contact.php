@@ -12,7 +12,7 @@
                         "Client Message: $message.\n";
     
                         
-$to = "talismanwebs@gmail.com";
+$to = "worldsend123@live.co.uk";
 
 $headers = "From: $email_from \r\n";
 
