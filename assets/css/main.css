@@ -27,6 +27,10 @@ body {
 	line-height: 1;
 }
 
+.center {
+	display: block;
+}
+
 ol, ul {
 	list-style: none;
 }
