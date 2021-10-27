@@ -1,6 +1,0 @@
-home > index.html
-about us > aboutus.html
-gallery > gallery.html
-services > services.html
-contact us > contactus.html
-Terms of Service > tos.html
