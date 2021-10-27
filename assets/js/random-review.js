@@ -7,6 +7,11 @@ var reviews = [
     "Thank you so much for the fabulous job Domestic Angels do cleaning my holiday rental business.  The house is spotless after each changeover and their eagle eyes spot any missing/ damaged items, which are promptly reported. I can’t recommend this team of girls enough,  they truly are a team of angels - <strong>Angela McCabe</strong>"
 ]
 
+var max = reviews.length;
+var id1;
+var id2;
+var id3;
+
 function shuffle(reviews) {
     reviews.sort(() => Math.random() - 0.5);
 }
