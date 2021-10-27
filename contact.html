@@ -128,31 +128,31 @@
                     </div>
                     <div class="col-lg-6 align-self-end">
                         <div class="contact-v2-right">
-                             <form name="Contact Us" action="/" method=POST data-netlify-recaptcha="true" data-netlify="true">
+                             <form name="Contact Us" method=POST data-netlify-recaptcha="true" data-netlify="true">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="fname">
-                                            <input type="text" placeholder="Your name*" required=true>
+                                            <input type="text" name="firstName" placeholder="Your name*" required=true>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="lname">
-                                            <input type="text" placeholder="Last name*" required=true>
+                                            <input type="text" name="lastName" placeholder="Last name*" required=true>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="mail-field">
-                                            <input type="email" placeholder="Your email*" required=true>
+                                            <input type="email" name="email" placeholder="Your email*" required=true>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="phone-number">
-                                            <input type="tel" placeholder="Phone number">
+                                            <input type="tel" name="phone" placeholder="Phone number">
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="message-field">
-                                            <textarea placeholder="Type message*" rows="5" required=true></textarea>
+                                            <textarea placeholder="Type message*" name="message" rows="5" required=true></textarea>
                                         </div>
                                     </div>
                                 </div>
