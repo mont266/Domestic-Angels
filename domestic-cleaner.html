@@ -236,17 +236,21 @@
                             <form name="Domestic Cleaner Application" method=POST data-netlify-recaptcha="true" data-netlify="true">
                                 <div class="name-area">
                                     <div class="fname">
+                                        <label>First Name*</label>
                                         <input type="text" name="firstName" placeholder="First name*" required=true>
                                     </div>
                                     <div class="lname">
+                                        <label>Last Name*</label>
                                         <input type="text" name="lastName" placeholder="Last name*" required=true>
                                     </div>
                                 </div>
                                 <div class="info-area">
                                     <div class="mail-address">
+                                        <label>Email*</label>
                                         <input type="email" name="email" placeholder="Email address*" required=true>
                                     </div>
                                     <div class="phone-number">
+                                        <label>Phone*</label>
                                         <input type="tel" name="phone" placeholder="Phone number">
                                     </div>
                                 </div>
@@ -255,12 +259,18 @@
                                     <input type="file" name="CV" placeholder="Upload CV*" required=true>
                                 </div><br>
                                 <div class="lname">
+                                    <label>How Many Years Experience*</label>
                                     <input type="text" name="yearsExperience" placeholder="How Many Years Experience*" required=true>
                                 </div><br>
                                 <div class="lname">
-                                    <input type="text" name="driversLicense" placeholder="Do You Drive?*" required=true>
+                                    <label for="driversLicense">Drivers License?*</label>
+                                    <select id="driversLicense" name="driversLicense">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                     </select>
                                 </div><br>
                                 <div class="message">
+                                    <label>Why Should We Hire You?*</label>
                                     <textarea placeholder="Why Should We Hire You?" name="WhyShouldWeHire?" rows="5"></textarea>
                                 </div>
                                 <p>It can take us a while to get through our applications. Please wait up to 2 weeks to hear back from us.</p>
